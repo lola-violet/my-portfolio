@@ -2,16 +2,17 @@
 import './App.css';
 
 
-// Import Bootstrap CDN
+// Bootstrap CDN
 import 'bootstrap/dist/css/bootstrap.min.css';
-// Import page elements
+// Site Components
 import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
     <div className="App">
       <Header />
-
+      <Footer />
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
