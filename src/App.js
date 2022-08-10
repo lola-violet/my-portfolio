@@ -5,15 +5,13 @@ import './App.css';
 // Bootstrap CDN
 import 'bootstrap/dist/css/bootstrap.min.css';
 // Site Components
-import Header from './components/header/Header';
-import Body from './components/body/Body';
+import MainContainer from './components/mainContainer/MainContainer';
 import Footer from './components/footer/Footer';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Body />
+      <MainContainer />
       <Footer />
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />

@@ -1,12 +1,16 @@
 import React from "react";
 
-//CSS
+// Body SubComponents
+
+
+// CSS
 import './body.css';
 
 export default function Body() {
+
     return(
         <div className="bodyBlock">
-            <h1>I'm the body</h1>
+            <h1>I'm the body blcok</h1>
         </div>
     )
 }
