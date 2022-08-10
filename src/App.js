@@ -6,12 +6,14 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // Site Components
 import Header from './components/header/Header';
+import Body from './components/body/Body';
 import Footer from './components/footer/Footer';
 
 function App() {
   return (
     <div className="App">
       <Header />
+      <Body />
       <Footer />
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />

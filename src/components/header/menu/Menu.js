@@ -7,7 +7,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 export default function Menu() {
     return(
-        <Navbar bg="light" expand="lg">
+        <Navbar expand="lg">
             <Container>
                 <Navbar.Brand href="#home">Lola Applegate</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
