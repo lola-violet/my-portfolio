@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Header from '../header/Header';
 import Jumbo from "../header/jumbo/Jumbo";
 import HomePage from "../body/pages/homePage/HomePage";
+import ProjectPage from "../body/pages/projectPage/ProjectPage";
 // CSS
 import './main.css';
 
@@ -16,17 +17,24 @@ export default function MainContainer() {
         if (currentPage === 'HomePage') {
             return <HomePage />;
         };
+        if (currentPage === 'About') {
+            return <ProjectPage />
+        }
+        if (currentPage === 'ProjectPage') {
+            return <ProjectPage />;
+        }
     }
     // Handle Page Change
     const handlePageChange = (page) => setCurrentPage(page);
 
     return(
-        <>
+        <main>
             <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+
             <Jumbo />
             <div className="mainContain">
-                {renderPage()}
+            {renderPage()}
             </div>
-        </>
+        </main>
     )
 }

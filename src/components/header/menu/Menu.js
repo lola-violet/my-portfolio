@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // Bootstrap Components
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+// import NavDropdown from 'react-bootstrap/NavDropdown';
 // CSS
 import './menu.css';
 
-export default function Menu() {
+export default function Menu({ currentPage, handlePageChange }) {
     return(
         <Navbar expand="lg" fixed="top" bg="black" variant="dark" >
             <Container className="container-fluid">
@@ -15,11 +16,27 @@ export default function Menu() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav" >
                     <Nav className="me-auto customNav">
-                        <Nav.Link href="#home" className="d-flex customNavLink">Home</Nav.Link>
-                        <Nav.Link href="#about" className="d-flex customNavLink">About</Nav.Link>
-                        <Nav.Link href="#projects" className="d-flex customNavLink">Projects</Nav.Link>
-                        <Nav.Link href="#contact" className="d-flex customNavLink">Contact</Nav.Link>
-                        <Nav.Link href="#resume" className="d-flex customNavLink">Resume</Nav.Link>
+                        <Nav.Link href="/" 
+                            className={currentPage === 'Home' ? 'customNavLink nav-active' : 'customNavLink'}
+                            onClick={() => handlePageChange('Home')}
+                            >Home
+                            </Nav.Link>
+                        <Nav.Link href="/about" 
+                            className={currentPage === 'About' ? 'customNavLink nav-active' : 'customNavLink'}
+                            onClick={() => handlePageChange('About')}
+                            >About</Nav.Link>
+                        <Nav.Link href="/projects" 
+                            className={currentPage === 'Projects' ? 'customNavLink nav-active' : 'customNavLink'}
+                            onClick={() => handlePageChange('Projects')}
+                            >Projects</Nav.Link>
+                        <Nav.Link href="/contact" 
+                            className={currentPage === 'Resume' ? 'customNavLink nav-active' : 'customNavLink'}
+                            onClick={() => handlePageChange('Resume')}
+                            >Resume</Nav.Link>
+                        <Nav.Link href="/resume" 
+                            className={currentPage === 'Contact' ? 'customNavLink nav-active' : 'customNavLink'}
+                            onClick={() => handlePageChange('Contact')}
+                            >Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

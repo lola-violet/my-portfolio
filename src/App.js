@@ -1,6 +1,6 @@
-// import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-
 
 // Bootstrap CDN
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -8,26 +8,20 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import MainContainer from './components/mainContainer/MainContainer';
 import Footer from './components/footer/Footer';
 
+import HomePage from './components/body/pages/homePage/HomePage';
+import ProjectPage from './components/body/pages/projectPage/ProjectPage';
+
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
       <MainContainer />
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/projects' element={<ProjectPage />} />
+      </Routes>
       <Footer />
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-    </div>
+    </BrowserRouter>
+
   );
 }
 
