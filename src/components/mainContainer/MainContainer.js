@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import Header from '../header/Header';
 import Jumbo from "../header/jumbo/Jumbo";
 import HomePage from "../body/pages/homePage/HomePage";
+// CSS
+import './main.css';
 
 
 export default function MainContainer() {
@@ -22,7 +24,7 @@ export default function MainContainer() {
         <>
             <Header currentPage={currentPage} handlePageChange={handlePageChange} />
             <Jumbo />
-            <div>
+            <div className="mainContain">
                 {renderPage()}
             </div>
         </>

@@ -6,7 +6,6 @@ import './footer.css';
 export default function Footer() {
     return(
         <div className='footerBlock'>
-            <h1>I'm the footer</h1>
             <div className="container">
                 <div className="custom-footer d-flex flex-wrap justify-content-center align-items-center" id="contact">
                     <a href="https://github.com/lola-violet" target="_blank" rel="noreferrer"><i className="fa-brands fa-github fa-3x"></i></a>
