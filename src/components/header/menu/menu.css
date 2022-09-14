@@ -1,8 +1,17 @@
-.custom-navbar {
-    display: flex;
-    justify-content: space-between !important;
+
+
+.customNav {
+    margin-right: 0 !important;
+    padding-top: 0;
+
 }
 
-.custom-nav-items {
-    justify-content: end;
+.customNavLink {
+    /* display: flex; */
+    align-items: flex-end;
+    color: white;
+}
+
+.customNavLink:hover {
+    color: pink;
 }

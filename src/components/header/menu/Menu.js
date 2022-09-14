@@ -9,31 +9,17 @@ import './menu.css';
 
 export default function Menu() {
     return(
-        <Navbar expand="lg" className="custom-navbar">
-            <Container>
-                <Navbar.Brand href="#home">Lola Applegate</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav custom-nav-items">
-                    <Nav className="me-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#about">About</Nav.Link>
-                        <NavDropdown title="Projects" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">
-                                Action
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">
-                                Another action
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">
-                                Something
-                            </NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">
-                                Separated link
-                            </NavDropdown.Item>
-                        </NavDropdown>
-                        <Nav.Link href="#contact">Contact</Nav.Link>
-                        <Nav.Link href="#resume">Resume</Nav.Link>
+        <Navbar expand="lg" fixed="top" bg="black" variant="dark" >
+            <Container className="container-fluid">
+                {/* <Navbar.Brand href="#home">Lola Applegate</Navbar.Brand> */}
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav" >
+                    <Nav className="me-auto customNav">
+                        <Nav.Link href="#home" className="d-flex customNavLink">Home</Nav.Link>
+                        <Nav.Link href="#about" className="d-flex customNavLink">About</Nav.Link>
+                        <Nav.Link href="#projects" className="d-flex customNavLink">Projects</Nav.Link>
+                        <Nav.Link href="#contact" className="d-flex customNavLink">Contact</Nav.Link>
+                        <Nav.Link href="#resume" className="d-flex customNavLink">Resume</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
