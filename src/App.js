@@ -6,6 +6,8 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // Site Components
 import MainContainer from './components/mainContainer/MainContainer';
+import Jumbo from './components/header/jumbo/Jumbo';
+import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 
 import HomePage from './components/body/pages/homePage/HomePage';
@@ -14,7 +16,8 @@ import ProjectPage from './components/body/pages/projectPage/ProjectPage';
 function App() {
   return (
     <BrowserRouter>
-      <MainContainer />
+      <Header />
+      <Jumbo />
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/projects' element={<ProjectPage />} />

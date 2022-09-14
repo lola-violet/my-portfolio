@@ -30,7 +30,6 @@ export default function MainContainer() {
     return(
         <main>
             <Header currentPage={currentPage} handlePageChange={handlePageChange} />
-
             <Jumbo />
             <div className="mainContain">
             {renderPage()}
