@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 // Main Container SubComponents
 import Header from '../header/Header';
+import Jumbo from "../header/jumbo/Jumbo";
 import HomePage from "../body/pages/homePage/HomePage";
 
 
@@ -20,6 +21,7 @@ export default function MainContainer() {
     return(
         <>
             <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+            <Jumbo />
             <div className="bodyBlock">
                 {renderPage()}
             </div>

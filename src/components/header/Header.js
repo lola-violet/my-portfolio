@@ -9,7 +9,7 @@ export default function Header() {
     return(
         <div className="headerBlock">
             <Menu />
-            <Jumbo />
+            {/* <Jumbo /> */}
         </div>
     )
 }
