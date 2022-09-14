@@ -1,0 +1,8 @@
+.custom-navbar {
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.custom-nav-items {
+    justify-content: end;
+}

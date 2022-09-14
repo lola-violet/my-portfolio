@@ -4,14 +4,16 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+// CSS
+import './menu.css';
 
 export default function Menu() {
     return(
-        <Navbar expand="lg">
+        <Navbar expand="lg" className="custom-navbar">
             <Container>
                 <Navbar.Brand href="#home">Lola Applegate</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
+                <Navbar.Collapse id="basic-navbar-nav custom-nav-items">
                     <Nav className="me-auto">
                         <Nav.Link href="#home">Home</Nav.Link>
                         <Nav.Link href="#about">About</Nav.Link>
