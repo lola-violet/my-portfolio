@@ -30,11 +30,11 @@ export default function Header({ currentPage, handlePageChange }) {
                                 className={currentPage === 'Projects' ? 'customNavLink nav-active' : 'customNavLink'}
                                 onClick={() => handlePageChange('Projects')}
                                 >Projects</Nav.Link>
-                            <Nav.Link href="/contact" 
+                            <Nav.Link href="/resume" 
                                 className={currentPage === 'Resume' ? 'customNavLink nav-active' : 'customNavLink'}
                                 onClick={() => handlePageChange('Resume')}
                                 >Resume</Nav.Link>
-                            <Nav.Link href="/resume" 
+                            <Nav.Link href="/contact" 
                                 className={currentPage === 'Contact' ? 'customNavLink nav-active' : 'customNavLink'}
                                 onClick={() => handlePageChange('Contact')}
                                 >Contact</Nav.Link>
