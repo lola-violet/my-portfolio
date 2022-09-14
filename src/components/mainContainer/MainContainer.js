@@ -22,7 +22,7 @@ export default function MainContainer() {
         <>
             <Header currentPage={currentPage} handlePageChange={handlePageChange} />
             <Jumbo />
-            <div className="bodyBlock">
+            <div>
                 {renderPage()}
             </div>
         </>
