@@ -2,11 +2,13 @@ import React from "react";
 
 // Home SubComponents
 import HomeAbout from "./HomeAbout";
-
+import '../../../mainContainer/main.css';
 
 
 export default function HomePage() {
     return(
-        <HomeAbout />
+        <div className="mainContain">
+            <HomeAbout />
+        </div>
     )
 }
