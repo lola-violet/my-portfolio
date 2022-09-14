@@ -1,0 +1,16 @@
+#custom-jumbo {
+    background-image: url(../../../images/pawel-czerwinski-slJUHpQEC0k-unsplash.jpg);
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+#custom-jumbo-text {
+    background-color: rgba(245, 245, 245, 0.706);
+    padding-left: 108px;
+    padding-top: 9px;
+    padding-bottom: 3px;
+    padding-right: 24px;
+    width: fit-content;
+    margin-left: 0;
+    font-family: 'Archivo', sans-serif;
+}
