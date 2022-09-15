@@ -22,7 +22,6 @@ export default function ProjectPage() {
                                 imgalt={project.imgalt}
                                 technology={project.technology}
                                 description={project.description}
-                                // applink={project.applink === null ? '' : project.applink}
                                 applink={project.applink}
                                 repo={project.repo}
                             />
