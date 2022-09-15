@@ -1,5 +1,5 @@
-.customPjCard {
-    /* width: 30vw; */
-    margin: 5px;
-    padding: 0;
+.customCardLink {
+    text-decoration: none;
+    font-weight: 600;
+    color: purple;
 }

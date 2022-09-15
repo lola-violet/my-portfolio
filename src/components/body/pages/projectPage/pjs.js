@@ -29,6 +29,7 @@ const pjs = [
         imgalt: 'Mongo DB Social Network API Graphic',
         technology: 'JavaScript, Node.js, MongoDB, Mongoose',
         description: 'A back-end database application modeled for a social networking site.',
+        applink: null,
         repo: 'https://github.com/lola-violet/nosql-social-network-api'
     },
     {
@@ -37,6 +38,7 @@ const pjs = [
         imgalt: 'Team Profile Generator Graphic',
         technology: 'JavaScript, Node.js, HTML, CSS',
         description: 'A command-line application which generates a front-end web page to manage team contacts.',
+        applink: null,
         repo: 'https://github.com/lola-violet/team-profile-generator'
     }
 ]
